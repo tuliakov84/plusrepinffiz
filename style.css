@@ -349,3 +349,20 @@ footer {
   h1 { font-size: 38px; }
   .price { font-size: 34px; }
 }
+
+.hero-card,
+.card,
+.profile-box,
+.price-card,
+.price-cardfeatured2,
+.cta,
+.contact-placeholder,
+.stat {
+  background: #161e30;
+}
+.price-card.featured {
+  background: #1a253f;
+}
+.price-cardfeatured2 {
+  background: #1a253f;
+}
