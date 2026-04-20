@@ -67,8 +67,8 @@
           </div>
           <div class="profile-box">
             <p class="muted" style="margin-bottom:10px;">Мои контакты</p>
-            <p><strong>Telegram:</strong><a href="https://t.me/extra_84" target="_blank" rel="noopener noreferrer"> @extra_84</a></p>
-            <p><strong>VK:</strong><a href="https://vk.com/extra84" target="_blank" rel="noopener noreferrer"> @extra84</a></p>
+            <p><strong>Telegram:</strong> <a href="https://t.me/extra_84" target="_blank" rel="noopener noreferrer"> @extra_84</a></p>
+            <p><strong>VK:</strong> <a href="https://vk.com/extra84" target="_blank" rel="noopener noreferrer"> @extra84</a></p>
             <p><strong>Почта:</strong> 
               <span onclick="copyEmail()" style="cursor: pointer; color: rgb(178, 178, 249); text-decoration: underline;">zz21marcel@gmail.com</span>
               <span style="font-size: 0.9em; color: gray;"> (нажмите, чтобы скопировать)</span>
@@ -221,15 +221,15 @@
         <div class="cta">
           <div>
             <h2>Готовы начать подготовку?</h2>
-            <p class="muted" style="margin-top: 10px; line-height: 1.8;">
-            </p>
+            <p class="muted" style="margin-top: 10px; line-height: 1.8;"></p>
             <div class="actions" style="margin-top: 20px; margin-bottom: 0;">
               <a class="btn btn-primary" href="#contacts">Связаться со мной</a>
             </div>
           </div>
           <div class="contact-placeholder" id="contacts">
-            <strong style="color:#fff;">Место для ваших контактов</strong><p><strong>Telegram:</strong><a href="https://t.me/extra_84" target="_blank" rel="noopener noreferrer"> @extra_84</a></p>
-            <p><strong>VK:</strong><a href="https://vk.com/extra84" target="_blank" rel="noopener noreferrer"> @extra84</a></p>
+            <strong style="color:#fff;">Мои контакты</strong>
+            <p><strong>Telegram:</strong> <a href="https://t.me/extra_84" target="_blank" rel="noopener noreferrer"> @extra_84</a></p>
+            <p><strong>VK:</strong> <a href="https://vk.com/extra84" target="_blank" rel="noopener noreferrer"> @extra84</a></p>
             <p><strong>Почта:</strong> 
               <span onclick="copyEmail()" style="cursor: pointer; color: rgb(178, 178, 249); text-decoration: underline;">zz21marcel@gmail.com</span>
             </p>
@@ -244,24 +244,22 @@
       <a href="#top">Остались вопросы? Можете задать мне их лично!</a>
     </div>
   </footer>
+
+  <script>
+  function copyEmail() {
+      const email = "zz21marcel@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+          alert("✅ Email скопирован: " + email);
+      }).catch(() => {
+          const textarea = document.createElement("textarea");
+          textarea.value = email;
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand("copy");
+          document.body.removeChild(textarea);
+          alert("✅ Email скопирован: " + email);
+      });
+  }
+  </script>
 </body>
 </html>
-
-
-
-
-<script>
-function copyEmail() {
-    const email = "zz21marcel@gmail.com";
-    navigator.clipboard.writeText(email).then(() => {
-    }).catch(() => {
-        // fallback
-        const textarea = document.createElement("textarea");
-        textarea.value = email;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand("copy");
-        document.body.removeChild(textarea);
-    });
-}
-</script>
